@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>擬似乱数による再現性擬似音楽生成</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header id="intro">
+  <section>
+        <h1>擬似乱数による再現性擬似音楽生成</h1>
+    <p>
+      テキストボックスにワードを入れると、そのワードを擬似乱数とし、再現性のあるランダムな曲を生成します。同じワードを入力すれば、正確な同じ曲が生成されます。
+    </p>
+    <p>
+     下のボックスに、何か文字を入力し、"生成"を押してください。
+    </p>
+    
+    <input id="seed" type="text" placeholder="ここに入力してください" />
+    <button id="load">生成</button><br>
+      </small>
+      <h5>©2017- SHIRAISHI KAKUYA. All rights reserved</h5>
+    
+  </section>    
+</header>
+
+<audio id="sound-file" preload="auto">
+	<source src="other/1.mp3" type="audio/mp3">
+</audio>
+
+
+<main>
+  <button1 id="play">再生</button1><br>
+  <script>/*
+  <p id="midi"></p>
+  */</script>
+  <section id="staff-container">
+    <div id="staff"></div>
+  </section>
+
+<p>
+  
+    <a class="topback" href="index.html">トップに戻る</a>
+</p>
+
+</main>
+    <script src='js/seedrandom.min.js'></script>
+    <script src='js/Tone.min.js'></script>
+    <script src='js/abcjs_basic_2.0-min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/sound.js"></script>
+  </body>
+</html>
