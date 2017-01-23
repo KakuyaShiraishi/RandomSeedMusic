@@ -7363,7 +7363,7 @@ if (!window.ABCJS.midi) {
         var j = a(document.createElement("a"), {
             href: k
         });
-        j.innerHTML = "download midi";
+        j.innerHTML = ""; //download midi
         i.insertBefore(j, i.firstChild);
         if (h) {
             return

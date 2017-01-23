@@ -1,3 +1,12 @@
+//
+//  index.js
+//  index
+//
+//  Created by Shiraishi Kakuya on 2016/10/20.
+//
+//
+
+
 var APP = {};
 
 window.ABCJS.parse.each = function(a, d, c) {
@@ -7,22 +16,43 @@ window.ABCJS.parse.each = function(a, d, c) {
   }
 }
 
+
+/*
+function button_click() {
+    alert(document.getElementById("seed").value);
+}
+*/
+function keydown_enter() {
+    if(window.event.keyCode == 13) {
+        document.getElementById("load").click();
+    }
+}
+
+
+
+
+
+
+
 document.getElementById("load").addEventListener("click", function(e) {
   var seed = document.getElementById("seed").value;
   if(seed) {
       document.getElementById("intro").style.display = "none";
       APP.MusicGenerator.init(seed);
+      
       document.getElementById("play").focus();
       document.getElementById("play").addEventListener("click", function(e) {
         var $el = e.target;
         if($el.getAttribute("data-playing") === "true") {
           APP.MusicGenerator.pause();
+          document.area1.src="svg/play.svg";
           $el.setAttribute("data-playing", "false");
-          $el.innerHTML = "再生";
+          $el.innerHTML = "PLAY";
           APP.MusicGenerator.report();
         } else {
           APP.MusicGenerator.play();
-          $el.innerHTML = "一時停止";
+          document.area1.src="svg/pause.svg";
+          $el.innerHTML = "PAUSE";
           $el.setAttribute("data-playing", "true");
         }
       });

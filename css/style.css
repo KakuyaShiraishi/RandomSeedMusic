@@ -1,7 +1,3 @@
-@font-face {
-        font-family: 'font1';
-        src: url('font/SourceHanCodeJP-ExtraLight.otf');
-    }
 
 
 header {
@@ -11,16 +7,16 @@ header {
   bottom: 0;
   left: 0;
   z-index: 9;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(240, 240, 240, 1);
 }
 header section {
   position: absolute;
-  border-radius: 50px;
+  border-radius: 3px;
   width: 90%;
   max-width: 610px;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  background: #ffffff;
+  background: #fafafa;
   color: #222;
   padding: 2rem;
   -webkit-transform: translate(-50%, -50%);
@@ -28,7 +24,6 @@ header section {
   text-align: center;
 }
 header h1 {
-  font-family:'font1';
   color: #333333 ;
   margin-top: 0;
 }
@@ -36,27 +31,44 @@ header h5 {
  color: #333333;
 }
 header p {
-  font-family:'font1';
   color: #333333 ;
   text-align: left;
 }
 header small {
-  font-family:'font1';
   color: #333333 ;
   margin-top: 1rem;
   display: inline-block;
 }
 
+
+
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+#searchform2 {  
+    position: relative;   
+} 
+
 #staff-container {
   color: #ffffff;
   width: 800px;
+  height:800px; /*楽譜場所の大きさ*/
   overflow: auto;
   position: absolute;
   top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 0 4rem;
+  padding: 0px 4rem 0px 4rem;
   background-color: #ffffff; /*楽譜背景色*/
   border-radius: 4px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -67,6 +79,7 @@ input, button {
   line-height: 1.4;
   margin: 0;
   padding: 0.25em 0.5em;
+  outline: 0;  
 }
 
 input {
@@ -75,141 +88,29 @@ input {
 }
 
 button {
-  background: #cdcdcd; /* ボタン背景*/
-  color: black; /*ボタン文字色*/
-  border: 1px solid #2b2b2;
+  background: #e6e6e6; /* ボタン背景*/
+  color: #747474; /*ボタン文字色*/
+  border: 1px solid #f5f5f5;
 }
 
 button1{
-  padding: 10px 10px 10px 10px;
-  width: calc(80% - 1rem);
-  max-width: 200px;
+	 max-width: 180px;
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
-  border: none;
-  text-align: center;
-  background: #111111; /*PLAY*/ /*#fb0*/
-  font-size: 35px;
-  color: white;
-  display: block;
-  margin: 60px auto;
-  border-radius: 4px;
-  -webkit-animation: pulse 200ms ease-in-out infinite alternate;
-          animation: pulse 200ms ease-in-out infinite alternate;
-  border: 4px solid #dddddd; /*f5b400*/
-  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  letter-spacing: 0.125em;
-}
-
-button1:hover{
-  padding: 15px 20px 15px 20px;
-  width: calc(80% - 1rem);
-  max-width: 200px;
-  -webkit-transform: translateX(0.5rem);
-          transform: translateX(0.5rem);
-  border: none;
-  text-align: center;
-  background: #111111; /*PLAY*/ /*#fb0*/
-  font-size: 38px;
-  color: white;
-  display: block;
-  margin: 52px auto;
-  border-radius: 4px;
-  -webkit-animation: pulse 200ms ease-in-out infinite alternate;
-          animation: pulse 200ms ease-in-out infinite alternate;
-  border: 4px solid #dddddd; /*f5b400*/
-  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  letter-spacing: 0.125em;
-}
-
-button1:active{
-  padding: 15px 10px 15px 10px;
-  width: calc(80% - 1rem);
-  max-width: 200px;
-  -webkit-transform: translateX(0.5rem);
-          transform: translateX(0.5rem);
-  border: none;
-  text-align: center;
-  background: #111111; /*PLAY*/ /*#fb0*/
-  font-size: 30px;
-  color: white;
-  display: block;
-  margin: 58px auto;
-  border-radius: 4px;
-  -webkit-animation: pulse 200ms ease-in-out infinite alternate;
-          animation: pulse 200ms ease-in-out infinite alternate;
-  border: 4px solid #dddddd; /*f5b400*/
-  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  letter-spacing: 0.125em;
-}
-
-
-
-/*
-#topback{
-  font-family:'font1';
-  width:300px;
-  color:#ffffff;
-  background:#337fcc;
-  font-size:28px;
-  text-align:center;
-  display:block;
-  text-decoration:none;
-  border:1px solid #225588;
-  padding:13px 0 8px 0;
-  border-radius:5px;
-}
-*/
-
-
-
-.topback {
-	background-color:#dddddd;
-	padding:20px 20px 20px 20px;
-	margin-left: 35px;
-	position:relative;
-	font-family: 'Open Sans', sans-serif;
-	font-size:40px;
-	text-decoration:none;
-	color:#000000;
-	background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
-	border-radius: 50px;
-}
-
-.topback:hover {
-  background-color:#dddddd;
-	padding:20px 20px 20px 20px;
-	margin-left: 25px;
-	top:-3px;
-	position:relative;
-	font-family: 'Open Sans', sans-serif;
-	font-size:43px;
-	text-decoration:none;
-	color:#000000;
-	background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
-	border-radius: 50px;
-  
-  
-}
-
-.topback:active {
-	background-color:#dddddd;
-	padding:10px 10px 10px 10px;
-	margin-left: 60px;
-	top:5px;
-	position:relative;
-	font-family: 'Open Sans', sans-serif;
-	font-size:35px;
-	text-decoration:none;
-	color:#000000;
-	background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
+	  display: block;
+  margin: 0px 46% auto auto;
 	border-radius: 50px;
 }
 
 
+button2{
+	position:relative;
+	margin: -40px 35% 0px 0px;
+	max-width: 180px;
+	  -webkit-transform: translateX(0.5rem);
+          transform: translateX(0.5rem);
+	  display: block;
+}
 
 
 #play, #midi {
@@ -301,7 +202,7 @@ html, body {
 }
 
 body {
-  background-color: #424242; /*背景のカラー*/
+  background-color: #fafafa; /*背景のカラー*/
   color: #222;
   line-height: 1.7;
 }

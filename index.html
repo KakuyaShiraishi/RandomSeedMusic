@@ -1,49 +1,109 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>擬似乱数による再現性擬似音楽生成</title>
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/style.css">
-  </head>
+<html>
 
-  <body>
-    <header id="intro">
-  <section>
-        <h1>擬似乱数による再現性擬似音楽生成</h1>
-    <p>
-      テキストボックスにワードを入れると、そのワードを擬似乱数とし、再現性のあるランダムな曲を生成します。同じワードを入力すれば、正確な同じ曲が生成されます。
-    </p>
-    <p>
-     下のボックスに、何か文字を入力し、"生成"を押してください。
-    </p>
-    
-    <input id="seed" type="text" placeholder="ここに入力してください" />
-    <button id="load">生成</button><br>
-      </small>
-      <h5>©2017- SHIRAISHI KAKUYA. All rights reserved</h5>
-    
-  </section>    
-</header>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 
-<audio id="sound-file" preload="auto">
-	<source src="other/1.mp3" type="audio/mp3">
-</audio>
+	<style type="text/css" media="screen, print">
+		@font-face {
+			font-family: "font01";
+			src: url("font/");
+		}
+		@font-face {
+			font-family: "font01";
+			src: url("font/GenShinL.ttf") format("truetype");
+		}
+		body {
+			font-family: "font01", serif
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<header id="intro">
 
 
-<main>
-  <button1 id="play">再生</button1><br>
-  <script>/*
-  <p id="midi"></p>
-  */</script>
-  <section id="staff-container">
-    <div id="staff"></div>
-  </section>
+		<center>
+			<div style="position:relative; top:120px;">
+				<img id="title1" src="svg/title1.png" width="70%">
+				</br>
+			</div>
+		</center>
 
-<p>
-  
-    <a class="topback" href="index.html">トップに戻る</a>
-</p>
+
+		<center>
+			<div style="position:relative; top:50px;"></div>
+			<img id="title1" src="svg/title2.png" width="50%">
+			</br>
+			</div>
+		</center>
+
+
+
+		<section>
+			<h1></h1>
+			<script>
+				/*
+				    <p>
+				      テキストボックスにワードを入れると、そのワードを擬似乱数とし、再現性のあるランダムな曲を生成します。同じワードを入力すれば、正確な同じ曲が生成されます。
+				    </p>
+				    <p>
+				     下のボックスに、何か文字を入力し、"生成"を押してください。
+				    </p>
+				    */
+
+			</script>
+
+
+
+
+			<input id="seed" type="text" onkeydown="keydown_enter();" placeholder="Seed" />
+			<button id="load" onclick="button_click()">Generate</button>
+			<br>
+
+
+			<script type="text/javascript">
+				document.getElementById('seed').focus();
+
+			</script>
+
+
+			</small>
+			<h5></h5>
+
+		</section>
+	</header>
+
+
+	<main>
+		<button1>
+			<img id="play" name="area1" src="svg/play.svg">
+			<br>
+		</button1>
+		<br>
+		<p id="midi"></p>
+		<section id="staff-container">
+			<div id="staff"></div>
+			</br>
+		</section>
+
+		<center>
+			<p>
+				<button2>
+					<a href="index.html">
+						<img src="svg/back.png" width="170">
+				</button2>
+			</p>
+		</center>
+		</pre>
+		<div id="footer"></div>
+		</div>
+		<pre>
 
 </main>
     <script src='js/seedrandom.min.js'></script>
