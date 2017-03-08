@@ -37,46 +37,28 @@
 
 
 		<center>
-			<div style="position:relative; top:50px;"></div>
-			<img id="title1" src="svg/title2.png" width="50%">
-			</br>
+			<div style="position:relative; top:80px;">
+				<img id="title1" src="svg/title2.png" width="50%">
+				</br>
 			</div>
 		</center>
 
 
 
-		<section>
+		<section style="position: relative; top: 220px">
 			<h1></h1>
-			<script>
-				/*
-				    <p>
-				      テキストボックスにワードを入れると、そのワードを擬似乱数とし、再現性のあるランダムな曲を生成します。同じワードを入力すれば、正確な同じ曲が生成されます。
-				    </p>
-				    <p>
-				     下のボックスに、何か文字を入力し、"生成"を押してください。
-				    </p>
-				    */
-
-			</script>
-
-
-
-
 			<input id="seed" type="text" onkeydown="keydown_enter();" placeholder="Seed" />
 			<button id="load" onclick="button_click()">Generate</button>
 			<br>
-
-
 			<script type="text/javascript">
 				document.getElementById('seed').focus();
-
 			</script>
-
-
 			</small>
 			<h5></h5>
 
 		</section>
+	
+
 	</header>
 
 
@@ -96,7 +78,7 @@
 			<p>
 				<button2>
 					<a href="index.html">
-						<img src="svg/back.png" width="170">
+						<img src="svg/back.png" width="100%">
 				</button2>
 			</p>
 		</center>
@@ -106,7 +88,7 @@
 		<pre>
 
 </main>
-    <script src='js/seedrandom.min.js'></script>
+    <script src='js/seedrandom.js'></script>
     <script src='js/Tone.min.js'></script>
     <script src='js/abcjs_basic_2.0-min.js'></script>
     <script src="js/index.js"></script>

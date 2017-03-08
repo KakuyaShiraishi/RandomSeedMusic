@@ -60,15 +60,15 @@ header small {
 
 #staff-container {
   color: #ffffff;
-  width: 800px;
-  height:800px; /*楽譜場所の大きさ*/
+  width: 820px;
+  height:680px; /*楽譜場所の大きさ*/
   overflow: auto;
-  position: absolute;
-  top: 55%;
+  position: relative;
+  top: 450px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 0px 4rem 0px 4rem;
+  padding: 0px 4rem 0px 4.3rem;
   background-color: #ffffff; /*楽譜背景色*/
   border-radius: 4px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -94,36 +94,38 @@ button {
 }
 
 button1{
+  top:60px;
+  position: relative;
 	 max-width: 180px;
-  -webkit-transform: translateX(0.5rem);
-          transform: translateX(0.5rem);
+	 margin-left: auto;
+ margin-right: auto;
+
 	  display: block;
-  margin: 0px 46% auto auto;
-	border-radius: 50px;
+
+
 }
 
 
 button2{
-	position:relative;
-	margin: -40px 35% 0px 0px;
-	max-width: 180px;
-	  -webkit-transform: translateX(0.5rem);
-          transform: translateX(0.5rem);
+
+  top: -820px;
+  left: -230px;
+  z-index: 8;
+  position: relative;
+	 max-width: 180px;
+	 margin-left: auto;
+ margin-right: auto;
+
 	  display: block;
 }
 
 
 #play, #midi {
-  position: absolute;
+  position: relative;
   top: 1rem;
   z-index: 8;
 }
 
-#play {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
 
 #midi {
   right: 1rem;
