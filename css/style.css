@@ -59,11 +59,11 @@ header small {
 } 
 
 #staff-container {
+  position: relative;
   color: #ffffff;
   width: 820px;
-  height:680px; /*楽譜場所の大きさ*/
+  height: 680px; /*楽譜場所の大きさ*/
   overflow: auto;
-  position: relative;
   top: 450px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

@@ -45,13 +45,13 @@ document.getElementById("load").addEventListener("click", function(e) {
         var $el = e.target;
         if($el.getAttribute("data-playing") === "true") {
           APP.MusicGenerator.pause();
-          document.area1.src="svg/play.svg";
+          document.area1.src="svg/play.png";
           $el.setAttribute("data-playing", "false");
           $el.innerHTML = "PLAY";
           APP.MusicGenerator.report();
         } else {
           APP.MusicGenerator.play();
-          document.area1.src="svg/pause.svg";
+          document.area1.src="svg/pause.png";
           $el.innerHTML = "PAUSE";
           $el.setAttribute("data-playing", "true");
         }
